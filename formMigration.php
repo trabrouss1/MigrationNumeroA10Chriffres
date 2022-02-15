@@ -97,13 +97,13 @@
                 <div class="form-group col-md-5">
                     <label for="numero">Numero à convertir</label>
                     <input type="text" name="numero" id="numero" class="form-control"
-                        value="<?php if (isset($numero)) echo $numero; ?>"
+                        value="<?= (isset($numero)) ? $numero : '' ?>"
                         placeholder="Veuillez entrer un numéro de téléphone" required>
                 </div>
                 <div class="form-group col-md-5 mt-3">
                     <label for="nvo_numero">Nouveau numéro</label>
                     <input type="text" name="nvo_numero" id="nvo_numero" class="form-control"
-                        value="<?php if ($nvo_numero != null) echo $nvo_numero;  ?>" readonly>
+                        value="<?= ($nvo_numero != null) ? $nvo_numero : '' ?>" readonly>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primary mt-3" name="sms">Valider</button>
