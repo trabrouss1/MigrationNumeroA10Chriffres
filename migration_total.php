@@ -8,7 +8,7 @@
             $prefixe = "21";
         }
         elseif($tc == 0){
-              $prefixe = "25";
+            $prefixe = "25";
         }
         else{
             $prefixe = "27";
@@ -24,7 +24,7 @@
             $suffixe = "01";
         }
         elseif($dc == 4 || $dc == 5 || $dc == 6){
-              $suffixe = "05";
+            $suffixe = "05";
         }
         else{
             $suffixe = "07";
@@ -50,7 +50,7 @@
 
             if(($longueur_numero == 8) && ($premier_chiffre == 2 || $premier_chiffre == 3)){
                 $nvo_numero = numero_fixe($numero[2]).$numero;
-                 $message = "Votre nouveau numéro fixe est le $nvo_numero\n";
+                $message = "Votre nouveau numéro fixe est le $nvo_numero\n";
             }
             elseif(($longueur_numero == 12) && ($premier == 2 || $premier == 3)){
                 $premiers_caracteres = substr($numero, 0, 4);

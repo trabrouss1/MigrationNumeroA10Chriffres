@@ -153,13 +153,13 @@
                 <div class="form-group col-md-5">
                     <label for="numero">Numero à convertir</label>
                     <input type="text" name="numero" id="numero" class="form-control"
-                        value="<?php if (isset($numero)) echo $numero; ?>"
+                        value="<?= (isset($numero)) ? $numero : '' ?>"
                         placeholder="Veuillez entrer un numéro de téléphone" required>
                 </div>
                 <div class="form-group col-md-5 mt-3">
                     <label for="nvo_numero">Nouveau numéro</label>
                     <input type="text" name="nvo_numero" id="nvo_numero" class="form-control"
-                        value="<?php if (!empty($nvo_numero)) echo $nvo_numero;  ?>" readonly>
+                        value="<?= (!empty($nvo_numero)) ? $nvo_numero : ''  ?>" readonly>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primary mt-3" name="cvt">Valider</button>
